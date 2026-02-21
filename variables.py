@@ -1,6 +1,6 @@
 #very descriptive
-student_first_name
-studentPhoneNumber
+#student_first_name
+#studentPhoneNumber
 
 #Allowed
 myage=21
