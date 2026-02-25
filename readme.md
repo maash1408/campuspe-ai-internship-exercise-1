@@ -59,4 +59,4 @@ print("Hello World!")
 |----|------------|-----------|
 | 1  | Basics of Variables| Link |
 
-(variables.py)[Python Basics/variables.py]
+[variables](python-Basics/variables.py)
