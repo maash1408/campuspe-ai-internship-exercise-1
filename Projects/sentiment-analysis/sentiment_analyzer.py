@@ -12,7 +12,7 @@ texts = [
     "I love Gen AI",
     "My Mentor sucks",
     "Eh it's okay"
-]
+] 
 
 for text in texts:
     result = classifier(text)[0]
