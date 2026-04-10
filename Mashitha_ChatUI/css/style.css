@@ -1,0 +1,172 @@
+/* Base */
+body {
+    margin: 0;
+    background: #0b0c10;
+    color: #e5e7eb;
+    font-family: system-ui, sans-serif;
+}
+
+/* Layout */
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: #111216;
+    padding: 15px;
+    border-right: 1px solid #2a2d36;
+}
+
+.sidebar h5 {
+    margin-bottom: 15px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    background: #1a1c22;
+    border: 1px solid #2a2d36;
+    color: #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: #23252d;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Chat */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 🔥 FIX */
+    padding-top: 10px;
+}
+
+/* Messages */
+.message {
+    width: 100%;
+    padding: 18px 0;
+}
+
+.message.user {
+    background: #0f1115;
+}
+
+.message.bot {
+    background: #1a1c22;
+}
+
+.message-inner {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Welcome */
+.welcome-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.welcome h1 {
+    font-size: 36px;
+}
+
+.welcome p {
+    color: #9ca3af;
+}
+
+/* Suggestions */
+.suggestions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #1a1c22;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #2a2d36;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: #23252d;
+}
+
+/* Input */
+.chat-input {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: #111216;
+    padding: 15px;
+    border-top: 1px solid #2a2d36;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-input-inner {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    background: #1a1c22;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #2a2d36;
+}
+
+.chat-input textarea {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #e5e7eb;
+    outline: none;
+    resize: none;
+}
+
+/* Orange Accent Button */
+.chat-input button {
+    background: #f59e0b;
+    border: none;
+    color: black;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background: #d97706;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2a2d36;
+}
+
+html, body {
+    height: 100%;
+}

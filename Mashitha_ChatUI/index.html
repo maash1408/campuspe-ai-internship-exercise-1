@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ChatUI</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h5>ChatUI</h5>
+        <button id="new-chat">+ New Chat</button>
+        <div id="chat-history"></div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Chat -->
+        <div class="chat-box" id="chat-box">
+
+            <div class="welcome-wrapper" id="welcome">
+                <div class="welcome">
+                    <h1>ChatUI</h1>
+                    <p>Ask anything. Start a conversation 🚀</p>
+
+                    <div class="suggestions">
+                        <div class="card">💡 Explain AI in simple terms</div>
+                        <div class="card">🧠 Coding interview questions</div>
+                        <div class="card">📚 Summarize a topic</div>
+                        <div class="card">🚀 Project ideas</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Input -->
+        <div class="chat-input">
+            <div class="chat-input-inner">
+                <textarea id="user-input" placeholder="Send a message..."></textarea>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>
